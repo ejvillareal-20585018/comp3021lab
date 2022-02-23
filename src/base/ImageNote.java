@@ -8,7 +8,7 @@ public class ImageNote extends Note {
 
 	public ImageNote(String title) {
 		super(title);
-		this.image = new File(title);
+//		this.image = new File(title);
 	}
 
 }

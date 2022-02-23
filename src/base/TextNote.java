@@ -1,7 +1,8 @@
 package base;
 
 public class TextNote extends Note {
-	public String content;
+	@SuppressWarnings("unused")
+	private String content;
 
 	public TextNote(String title) {
 		super(title);
