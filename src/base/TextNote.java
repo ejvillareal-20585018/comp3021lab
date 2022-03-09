@@ -1,12 +1,16 @@
 package base;
 
 public class TextNote extends Note {
-	@SuppressWarnings("unused")
-	private String content;
+	String content;
 
 	public TextNote(String title) {
 		super(title);
-//		this.content = new String(title);
-	}
 
+	}
+	
+	public TextNote(String title, String content) {
+		super(title);
+		this.content = content;
+	}
+	
 }
