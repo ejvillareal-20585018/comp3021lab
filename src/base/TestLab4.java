@@ -39,7 +39,7 @@ public class TestLab4 {
 		
 		System.out.println("Congratulations, your code is OK");
 		
-		/*	Testing getText from file
+		/*/	Testing getText from file
 		TextNote n = new TextNote(new File(((TextNote) nb2.getFolders().get(0).getNotes().get(0)).getTitle().replaceAll(" ", "_")+".txt"));
 		System.out.print(n.content);*/
 	}
