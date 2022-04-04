@@ -228,16 +228,13 @@ public class NoteBookWindow extends Application {
 		// currentFolder
 		for(Folder f : noteBook.getFolders()) {
 			if(f.getName().equals(currentFolder)) {
-				if(f.searchNotes(currentSearch).isEmpty()) {
-					break;
-				}
-				
-				else {
-					for(Note titles : f.searchNotes(currentSearch)) {
+				List<Note> notes = f.searchNotes(currentSearch);
+				if(!notes.isEmpty()) {
+					for(Note titles : notes) {
 						list.add(titles.getTitle());
 					}
-					break;
 				}
+				break;
 			}
 		}
 		
