@@ -36,6 +36,12 @@ public class NoteBook implements java.io.Serializable{
 	public ArrayList<Folder> getFolders() {
 		return this.folders;
 	}
+	
+	public void addFolder(String folderName) {
+	    // TO DO
+		Folder nFolder = new Folder(folderName);
+		folders.add(nFolder);
+	}
 
 	public boolean insertNote(String folderName, Note note) {
 		Folder f = null;
